@@ -10,7 +10,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && node_modules/.bin/tsc -p .",
     "start": "node dist/src/app.js",
-    "test": "npm run build && node_modules/.bin/mocha --opts mocha.opts",
+    "test": "NODE_ENV=test npm run build && node_modules/.bin/mocha --opts mocha.opts",
     "test:coverage": "NODE_ENV=test ./node_modules/.bin/nyc npm test"
   },
   "author": "Michael Leßnau <michael.lessnau@gmail.com>",
@@ -39,6 +39,6 @@
     "require": ["ts-node/register"],
     "reporter": ["json", "html", "text"],
     "all": true,
-    "check-coverage": true
+    "check-coverage": false
   }
 }
