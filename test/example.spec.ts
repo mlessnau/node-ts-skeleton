@@ -13,8 +13,4 @@ describe('Example', () => {
       expect(example.test()).to.deep.equal('test');
     });
   });
-
-  it('should fail', () => {
-    expect(example.test()).to.deep.equal('foo');
-  });
 });

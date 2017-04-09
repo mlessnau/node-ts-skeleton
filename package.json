@@ -8,17 +8,20 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && node_modules/.bin/ntsc -p .",
+    "build": "npm run clean && node_modules/.bin/tsc -p .",
     "start": "node dist/src/app.js",
-    "test": "node_modules/.bin/mocha --opts mocha.opts"
+    "test": "node_modules/.bin/mocha --opts mocha.opts",
+    "test:coverage": "node_modules/.bin/ts-node node_modules/istanbul/lib/cli.js cover -e .ts -x \"*.d.ts\" -x \"*.spec.ts\" _mocha -- --compilers ts:ts-node/register -R spec test/**/*.spec.ts"
   },
   "author": "Michael Leßnau <michael.lessnau@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^3.4.35",
+    "@types/istanbul": "^0.4.29",
     "@types/mocha": "^2.2.40",
     "@types/node": "^7.0.12",
     "chai": "^3.5.0",
+    "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.2.0",
     "ntypescript": "^1.201609302242.1",
     "ts-node": "^3.0.2",
