@@ -1,0 +1,10 @@
+instrumentation:
+  extensions:
+    - ".ts"
+  excludes:
+    - "*.d.ts"
+    - "*.spec.ts"
+  include-all-sources: true
+reporting:
+  dir: "./dist/coverage"
+  print: "detail"
