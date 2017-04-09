@@ -1,0 +1,14 @@
+{
+  "name": "node-ts-skeleton",
+  "version": "1.0.0",
+  "description": "node.js typescript project skeleton",
+  "main": "dist/src/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Leßnau <michael.lessnau@gmail.com>",
+  "license": "MIT"
+}
