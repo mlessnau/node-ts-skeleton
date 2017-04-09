@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Example } from '../../src/example';
+import { Example } from '../src/example';
 
 describe('Example', () => {
   let example;
@@ -12,5 +12,9 @@ describe('Example', () => {
     it('should return "test"', () => {
       expect(example.test()).to.deep.equal('test');
     });
+  });
+
+  it('should fail', () => {
+    expect(example.test()).to.deep.equal('foo');
   });
 });

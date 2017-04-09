@@ -10,7 +10,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && node_modules/.bin/ntsc -p .",
     "start": "node dist/src/app.js",
-    "test": "npm run build && node_modules/.bin/mocha ./dist/**/*.spec.js"
+    "test": "node_modules/.bin/mocha --opts mocha.opts"
   },
   "author": "Michael Leßnau <michael.lessnau@gmail.com>",
   "license": "MIT",
