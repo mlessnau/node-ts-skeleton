@@ -1,4 +1,5 @@
 const del = require('del');
+const env = require('gulp-env');
 const gulp = require('gulp');
 const mocha = require('gulp-mocha');
 const shell = require('gulp-shell');
@@ -20,6 +21,7 @@ gulp.task('build', ['clean'], () => {
 });
 
 gulp.task('test', () => {
+  env({vars: {NODE_ENV: 'test'}});
   return gulp.src('**/*.spec.ts').pipe(mocha(mochaOptions));
 });
 
