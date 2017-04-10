@@ -9,6 +9,7 @@ The project skeleton integrates:
 * mocha
 * chai
 * nyc / istanbul
+* tslint
 
 ### Gulp tasks
 
@@ -16,6 +17,8 @@ The project skeleton integrates:
 * ```gulp build``` - transpile all .ts files ({src,test}/**/*.ts -> build)
 * ```gulp test``` - run mocha tests
 * ```gulp test:coverage``` - run mocha tests and generate reporting for ```.ts``` files
+* ```gulp test:tslint``` - run ```tslint```
+* ```gulp ci``` - runs ```test:tslint```, ```build```, ```test:coverage```
 
 ## Installation
 
