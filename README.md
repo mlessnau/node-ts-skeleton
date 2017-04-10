@@ -15,10 +15,11 @@ The project skeleton integrates:
 
 * ```gulp clean``` - delete all build artefacts
 * ```gulp build``` - transpile all .ts files ({src,test}/**/*.ts -> build)
-* ```gulp test``` - run mocha tests
-* ```gulp test:coverage``` - run mocha tests and generate reporting for ```.ts``` files
+* ```gulp test``` - runs ```test:tslint``` and ```test:coverage```
+* ```gulp test:spec``` - run mocha tests
+* ```gulp test:coverage``` - run ```test:spec``` and generate reporting for ```.ts``` files
 * ```gulp test:tslint``` - run ```tslint```
-* ```gulp ci``` - runs ```test:tslint```, ```build```, ```test:coverage```
+* ```gulp tdd``` - watches and runs ```test:coverage``` in a loop
 
 ## Installation
 
