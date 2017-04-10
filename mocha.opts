@@ -1,5 +1,0 @@
---recursive
---require ts-node/register
---reporter dot
---watch-extensions ts
-test/**/*.spec.ts
