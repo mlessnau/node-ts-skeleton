@@ -1,0 +1,6 @@
+{
+  "recursive": true,
+  "require": "ts-node/register",
+  "reporter": "dot",
+  "watch-extension": "ts"
+}

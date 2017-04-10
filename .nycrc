@@ -1,0 +1,26 @@
+{
+  "report-dir": "./dist/coverage",
+  "lines": 80,
+  "statements": 80,
+  "functions": 80,
+  "branches": 80,
+  "include": [
+    "src/*.ts",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "typings"
+  ],
+  "extension": [
+    ".ts"
+  ],
+  "require": [
+    "ts-node/register"
+  ],
+  "reporter": [
+    "json",
+    "html",
+    "text"
+  ],
+  "all": true
+}
