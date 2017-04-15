@@ -36,6 +36,6 @@ gulp.task('test:tslint', () => {
 
 gulp.task('test', ['test:tslint', 'test:coverage']);
 
-gulp.task('tdd', ['test:coverage'], () => {
-  gulp.watch(['src/**/*.*', 'test/**/*.*'], ['test:coverage']);
+gulp.task('tdd', ['test:spec'], () => {
+  gulp.watch(['src/**/*.*', 'test/**/*.*'], ['test:spec']);
 });
